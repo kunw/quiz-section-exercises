@@ -1,2 +1,8 @@
 http://www.google.com
 http://www.yahoo.com
+http://www.youtube.com/
+http://www.youtube.com/watch?v=5EjG-1U3wqA&feature=b-mv
+http://www.cs.washington.edu/
+http://www.cs.washington.edu/education/courses/cse403/12au/
+http://www.cs.washington.edu/education/courses/cse403/02au/
+https://www.djangoproject.com/
