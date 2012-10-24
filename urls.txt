@@ -11,3 +11,6 @@ https://twitter.com/
 http://www.facebook.com/
 http://www.amazon.com/
 http://aws.amazon.com/
+http://www.heroku.com/
+http://www.onebusaway.org/where/standard/
+https://github.com/
