@@ -6,3 +6,8 @@ http://www.cs.washington.edu/
 http://www.cs.washington.edu/education/courses/cse403/12au/
 http://www.cs.washington.edu/education/courses/cse403/02au/
 https://www.djangoproject.com/
+http://myuw.washington.edu/
+https://twitter.com/
+http://www.facebook.com/
+http://www.amazon.com/
+http://aws.amazon.com/
