@@ -27,6 +27,7 @@ class TestSortFunctions(unittest.TestCase):
         self.assertTrue(self.list_char_sorted == quicksort(self.list_char))
         
     def test_char_mergesort(self):
+        print(mergesort(self.list_char))
         self.assertTrue(self.list_char_sorted == mergesort(self.list_char))
         
     def test_char_radixsort(self):
@@ -42,6 +43,24 @@ class TestSortFunctions(unittest.TestCase):
     def test_string_radixsort(self):
         print(radixsort(self.list_string))
         self.assertTrue(self.list_string_sorted == radixsort(self.list_string))
+        
+    def test_empty_quicksort(self):
+        self.assertTrue([] == quicksort([]))
+        
+    def test_empty_mergesort(self):
+        self.assertTrue([] == mergesort([]))
+        
+    def test_empty_radixsort(self):
+        self.assertTrue([] == radixsort([]))
+        
+    def test_one_quicksort(self):
+        self.assertTrue(['a'] == quicksort(['a']))
+        
+    def test_one_mergesort(self):
+        self.assertTrue(['a'] == mergesort(['a']))
+        
+    def test_one_radixsort(self):
+        self.assertTrue(['a'] == radixsort(['a']))
         
     def test_char_quicksort(self):
         self.assertTrue(1 == 1)
