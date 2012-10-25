@@ -23,6 +23,7 @@ def quicksort(elements):
         # at the end with the pivot element.
         return quicksort(left) + [pivot] + quicksort(right)
 
+############################################################
 
 # Mergesort
 def mergesort(n):
@@ -53,12 +54,31 @@ def merge(a, b):
     else:
         result.extend(b)
     return result
-
-
-if __name__ == '__main__':
-    #Example usage:
-    x = mergesort(["a","A","dl","b","dL","q","dl","z"])
-    #x = mergesort([5, 6, 1, 7, 8, 9, 2, 10, 4, 3])
-    x.reverse() #the numbers are in descending order by default
-    print x
-    #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    
+############################################################
+    
+# (Modified code taken from http://codehost.wordpress.com/2011/07/22/radix-sort/)
+# Radix sort for variable length strings
+def radixsort(array):
+    if (len(array) <= 1):
+        return array
+    maxLen = -1
+    for string in array: # Find longest string
+        strLen = len(string)
+        if strLen > maxLen:
+            maxLen = strLen
+    oa = ord('A') - 1; # First character code
+    oz = ord('z') - 1; # Last character code
+    n = oz - oa + 2; # Number of buckets (+empty character)
+    buckets = [[] for i in range(0, n)] # The buckets
+    for position in reversed(range(0, maxLen)):
+        for string in array:
+            index = 0 # Assume "empty" character
+            if position < len(string): # Might be within length
+                index = ord(string[position]) - oa
+            buckets[index].append(string) # Add to bucket
+        del array[:]
+        for bucket in buckets: # Reassemble array in new order
+            array.extend(bucket)
+            del bucket[:]
+    return array
