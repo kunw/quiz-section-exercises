@@ -1,6 +1,6 @@
 import unittest
 from sort import sortfile
-from sortalgs import mergesort, quicksort, radixsort
+from sortalgs import mergesort, quicksort, radixsort, selectionsort
 
 class TestSortFunctions(unittest.TestCase):
 
@@ -27,23 +27,26 @@ class TestSortFunctions(unittest.TestCase):
         self.assertTrue(self.list_char_sorted == quicksort(self.list_char))
         
     def test_char_mergesort(self):
-        print(mergesort(self.list_char))
         self.assertTrue(self.list_char_sorted == mergesort(self.list_char))
         
     def test_char_radixsort(self):
         self.assertTrue(self.list_char_sorted == radixsort(self.list_char))
         
+    def test_char_selectionsort(self):
+        self.assertTrue(self.list_char_sorted == selectionsort(self.list_char))
+ 
     def test_string_quicksort(self):
-        print(quicksort(self.list_string))
         self.assertTrue(self.list_string_sorted == quicksort(self.list_string))
         
     def test_string_mergesort(self):
         self.assertTrue(self.list_string_sorted == mergesort(self.list_string))
         
     def test_string_radixsort(self):
-        print(radixsort(self.list_string))
         self.assertTrue(self.list_string_sorted == radixsort(self.list_string))
         
+    def test_char_selectionsort(self):
+        self.assertTrue(self.list_string_sorted == selectionsort(self.list_string))
+ 
     def test_empty_quicksort(self):
         self.assertTrue([] == quicksort([]))
         
@@ -53,6 +56,9 @@ class TestSortFunctions(unittest.TestCase):
     def test_empty_radixsort(self):
         self.assertTrue([] == radixsort([]))
         
+    def test_empty_selectionsort(self):
+        self.assertTrue([] == selectionsort([]))
+ 
     def test_one_quicksort(self):
         self.assertTrue(['a'] == quicksort(['a']))
         
@@ -62,14 +68,8 @@ class TestSortFunctions(unittest.TestCase):
     def test_one_radixsort(self):
         self.assertTrue(['a'] == radixsort(['a']))
         
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)
-
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)
-        
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)        
+    def test_one_selectionsort(self):
+        self.assertTrue(['a'] == selectionsort(['a']))
 
 if __name__ == '__main__':
     unittest.main()

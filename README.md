@@ -4,13 +4,13 @@ Our sorting algorithms:
 * Merge sort (O(n log n))
 * Quick sort (O(n log n))
 * Radix sort (O(n))
-* ??? (O(n^2))
+* Selection sort (O(n^2))
 
 The available sorting algorithms are named:
 * mergesort
 * quicksort
 * radixsort
-* ???
+* selectionsort
 
 Example Python script usage:
 ```python
