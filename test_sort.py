@@ -87,6 +87,9 @@ class TestSortFunctions(unittest.TestCase):
     def test_one_radixsort(self):
         self.assertTrue(['a'] == radixsort(['a']))
     
+    def test_one_selectionsort(self):
+        self.assertTrue(['a'] == selectionsort(['a']))
+    
     def test_ascii_quicksort(self):
         self.assertTrue(self.list_ascii_sorted == quicksort(self.list_ascii))
         
@@ -95,6 +98,9 @@ class TestSortFunctions(unittest.TestCase):
         
     def test_ascii_radixsort(self):
         self.assertTrue(self.list_ascii_sorted == radixsort(self.list_ascii))
+    
+    def test_ascii_selectionsort(self):
+        self.assertTrue(self.list_ascii_sorted == selectionsort(self.list_ascii))
         
     def test_url_quicksort(self):
         self.assertTrue(self.list_url_sorted == quicksort(self.list_url))
@@ -105,8 +111,8 @@ class TestSortFunctions(unittest.TestCase):
     def test_url_radixsort(self):
         self.assertTrue(self.list_url_sorted == radixsort(self.list_url))
         
-    def test_one_selectionsort(self):
-        self.assertTrue(['a'] == selectionsort(['a']))
-
+    def test_url_selectionsort(self):
+        self.assertTrue(self.list_url_sorted == selectionsort(self.list_url))
+        
 if __name__ == '__main__':
     unittest.main()
