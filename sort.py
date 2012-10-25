@@ -1,5 +1,5 @@
 import sys
-from sortalgs import mergesort, quicksort
+from sortalgs import mergesort, quicksort, radixsort
 
 def sortfile(filename, sort_func):
     '''
@@ -31,6 +31,8 @@ if __name__ == "__main__":
             sortfunc = mergesort
         elif func == 'quicksort':
             sortfunc = quicksort
+        elif func == 'radixsort':
+            sortfunc = radixsort
         else:
             raise Exception('Invalid sort function: ' + func)
         sortfile(filename, sortfunc)

@@ -1,4 +1,16 @@
-Quiz Section Exercises
+### Quiz Section Exercises
+
+Our sorting algorithms:
+* Merge sort (O(n log n))
+* Quick sort (O(n log n))
+* Radix sort (O(n))
+* ??? (O(n^2))
+
+The available sorting algorithms are named:
+* mergesort
+* quicksort
+* radixsort
+* ???
 
 Example Python script usage:
 ```python
@@ -13,6 +25,8 @@ Example command line usage:
 ```
 python sort.py urls.txt quicksort
 ```
+
+Output automatically goes to 'sorted_urls.txt'.
 
 How we divided the work:
 * One person for each algorithm (4 total)
