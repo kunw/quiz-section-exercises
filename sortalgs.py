@@ -29,21 +29,20 @@ def quicksort(elements):
 def mergesort(n):
     if len(n) > 1:
         mid = len(n) // 2
-        a = n[:mid]
-        b = n[mid:]
+        a = n[mid:]
+        b = n[:mid]
         if len(a) > 1:
             a = mergesort(a)
         if len(b) > 1:
-                b = mergesort(b)
+            b = mergesort(b)
         return merge(a, b)
     else:
-            return n 
+        return n 
    
 def merge(a, b):
     result = []
     while a and b:
-        if cmp(a[0],b[0])>= 0:
-        #if a[0] >= b[0]:
+        if (a[0] < b[0]):
             result.append(a[0])
             a = a[1:]
         else:
