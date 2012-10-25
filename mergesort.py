@@ -16,11 +16,11 @@ def merge(a, b):
     while a and b:
         if cmp(a[0],b[0])>= 0:
         #if a[0] >= b[0]:
-            result.append(a[0])
-            a = a[1:]
-        else:
             result.append(b[0])
             b = b[1:]
+        else:
+            result.append(a[0])
+            a = a[1:]
     if a:
         result.extend(a)
     else:
