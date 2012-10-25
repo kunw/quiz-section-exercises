@@ -1,6 +1,6 @@
 import unittest
 from sort import sortfile
-from sortalgs import mergesort, quicksort, radixsort
+from sortalgs import mergesort, quicksort, radixsort, selectionsort
 
 class TestSortFunctions(unittest.TestCase):
 
@@ -51,6 +51,9 @@ class TestSortFunctions(unittest.TestCase):
     def test_char_radixsort(self):
         self.assertTrue(self.list_char_sorted == radixsort(self.list_char))
         
+    def test_char_selectionsort(self):
+        self.assertTrue(self.list_char_sorted == selectionsort(self.list_char))
+ 
     def test_string_quicksort(self):
         self.assertTrue(self.list_string_sorted == quicksort(self.list_string))
         
@@ -60,6 +63,9 @@ class TestSortFunctions(unittest.TestCase):
     def test_string_radixsort(self):
         self.assertTrue(self.list_string_sorted == radixsort(self.list_string))
         
+    def test_char_selectionsort(self):
+        self.assertTrue(self.list_string_sorted == selectionsort(self.list_string))
+ 
     def test_empty_quicksort(self):
         self.assertTrue([] == quicksort([]))
         
@@ -69,6 +75,9 @@ class TestSortFunctions(unittest.TestCase):
     def test_empty_radixsort(self):
         self.assertTrue([] == radixsort([]))
         
+    def test_empty_selectionsort(self):
+        self.assertTrue([] == selectionsort([]))
+ 
     def test_one_quicksort(self):
         self.assertTrue(['a'] == quicksort(['a']))
         
@@ -96,14 +105,8 @@ class TestSortFunctions(unittest.TestCase):
     def test_url_radixsort(self):
         self.assertTrue(self.list_url_sorted == radixsort(self.list_url))
         
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)
-
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)
-        
-    def test_char_quicksort(self):
-        self.assertTrue(1 == 1)        
+    def test_one_selectionsort(self):
+        self.assertTrue(['a'] == selectionsort(['a']))
 
 if __name__ == '__main__':
     unittest.main()
