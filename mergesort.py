@@ -28,9 +28,10 @@ def merge(a, b):
     return result
 
 
-#Example usage:
-x = mergesort(["a","A","dl","b","dL","q","dl","z"])
-#x = mergesort([5, 6, 1, 7, 8, 9, 2, 10, 4, 3])
-x.reverse() #the numbers are in descending order by default
-print x
-#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+if __name__ == '__main__':
+    #Example usage:
+    x = mergesort(["a","A","dl","b","dL","q","dl","z"])
+    #x = mergesort([5, 6, 1, 7, 8, 9, 2, 10, 4, 3])
+    x.reverse() #the numbers are in descending order by default
+    print x
+    #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
