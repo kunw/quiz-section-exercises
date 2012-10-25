@@ -66,8 +66,8 @@ def radixsort(array):
         strLen = len(string)
         if strLen > maxLen:
             maxLen = strLen
-    oa = ord('0') - 1; # First character code
-    oz = ord('z') - 1; # Last character code
+    oa = ord('!') - 1; # First character code
+    oz = ord('~') - 1; # Last character code
     n = oz - oa + 2; # Number of buckets (+empty character)
     buckets = [[] for i in range(0, n)] # The buckets
     for position in reversed(range(0, maxLen)):
