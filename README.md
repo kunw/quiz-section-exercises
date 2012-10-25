@@ -3,9 +3,9 @@ Quiz Section Exercises
 
 Example usage:
 ```python
-from sort_urls import sort_url
+from sort import sort
 from mergesort import mergesort
 
-file = 'urls.py'
+file = 'urls.txt'
 sort_url(file, mergesort)
 ```
