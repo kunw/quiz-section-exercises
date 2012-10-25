@@ -1,3 +1,6 @@
+import sys
+from sortalgs import mergesort, quicksort
+
 def sortfile(filename, sort_func):
     '''
     Reads in a list of urls from the given filename and passes it to the
@@ -14,3 +17,20 @@ def sortfile(filename, sort_func):
     f =  open('sorted_urls.txt', 'w')
     for url in url_list:
         f.write(url)
+
+if __name__ == "__main__":
+    arg = sys.argv
+    if len(arg) != 3:
+        print 'Invalid number of arguments!'
+        print 'Usage: python sort.py [filename] [sortfunc]'
+    else:
+        filename = arg[1]
+        func = arg[2]
+        sortfunc = None
+        if func == 'mergesort':
+            sortfunc = mergesort
+        elif func == 'quicksort':
+            sortfunc = quicksort
+        else:
+            raise Exception('Invalid sort function: ' + func)
+        sortfile(filename, sortfunc)
