@@ -43,76 +43,76 @@ class TestSortFunctions(unittest.TestCase):
         ]
 
     def test_char_quicksort(self):
-        self.assertTrue(self.list_char_sorted == quicksort(self.list_char))
+        self.assertEqual(self.list_char_sorted, quicksort(self.list_char))
         
     def test_char_mergesort(self):
-        self.assertTrue(self.list_char_sorted == mergesort(self.list_char))
+        self.assertEqual(self.list_char_sorted, mergesort(self.list_char))
         
     def test_char_radixsort(self):
-        self.assertTrue(self.list_char_sorted == radixsort(self.list_char))
+        self.assertEqual(self.list_char_sorted, radixsort(self.list_char))
         
     def test_char_selectionsort(self):
-        self.assertTrue(self.list_char_sorted == selectionsort(self.list_char))
+        self.assertEqual(self.list_char_sorted, selectionsort(self.list_char))
  
     def test_string_quicksort(self):
-        self.assertTrue(self.list_string_sorted == quicksort(self.list_string))
+        self.assertEqual(self.list_string_sorted, quicksort(self.list_string))
         
     def test_string_mergesort(self):
-        self.assertTrue(self.list_string_sorted == mergesort(self.list_string))
+        self.assertEqual(self.list_string_sorted, mergesort(self.list_string))
         
     def test_string_radixsort(self):
-        self.assertTrue(self.list_string_sorted == radixsort(self.list_string))
+        self.assertEqual(self.list_string_sorted, radixsort(self.list_string))
         
-    def test_char_selectionsort(self):
-        self.assertTrue(self.list_string_sorted == selectionsort(self.list_string))
+    def test_string_selectionsort(self):
+        self.assertEqual(self.list_string_sorted, selectionsort(self.list_string))
  
     def test_empty_quicksort(self):
-        self.assertTrue([] == quicksort([]))
+        self.assertEqual([], quicksort([]))
         
     def test_empty_mergesort(self):
-        self.assertTrue([] == mergesort([]))
+        self.assertEqual([], mergesort([]))
         
     def test_empty_radixsort(self):
-        self.assertTrue([] == radixsort([]))
+        self.assertEqual([], radixsort([]))
         
     def test_empty_selectionsort(self):
-        self.assertTrue([] == selectionsort([]))
+        self.assertEqual([], selectionsort([]))
  
     def test_one_quicksort(self):
-        self.assertTrue(['a'] == quicksort(['a']))
+        self.assertEqual(['a'], quicksort(['a']))
         
     def test_one_mergesort(self):
-        self.assertTrue(['a'] == mergesort(['a']))
+        self.assertEqual(['a'], mergesort(['a']))
         
     def test_one_radixsort(self):
-        self.assertTrue(['a'] == radixsort(['a']))
+        self.assertEqual(['a'], radixsort(['a']))
     
     def test_one_selectionsort(self):
-        self.assertTrue(['a'] == selectionsort(['a']))
+        self.assertEqual(['a'], selectionsort(['a']))
     
     def test_ascii_quicksort(self):
-        self.assertTrue(self.list_ascii_sorted == quicksort(self.list_ascii))
+        self.assertEqual(self.list_ascii_sorted, quicksort(self.list_ascii))
         
     def test_ascii_mergesort(self):
-        self.assertTrue(self.list_ascii_sorted == mergesort(self.list_ascii))
+        self.assertEqual(self.list_ascii_sorted, mergesort(self.list_ascii))
         
     def test_ascii_radixsort(self):
-        self.assertTrue(self.list_ascii_sorted == radixsort(self.list_ascii))
+        self.assertEqual(self.list_ascii_sorted, radixsort(self.list_ascii))
     
     def test_ascii_selectionsort(self):
-        self.assertTrue(self.list_ascii_sorted == selectionsort(self.list_ascii))
+        self.assertEqual(self.list_ascii_sorted, selectionsort(self.list_ascii))
         
     def test_url_quicksort(self):
-        self.assertTrue(self.list_url_sorted == quicksort(self.list_url))
+        self.assertEqual(self.list_url_sorted, quicksort(self.list_url))
         
     def test_url_mergesort(self):
-        self.assertTrue(self.list_url_sorted == mergesort(self.list_url))
+        self.assertEqual(self.list_url_sorted, mergesort(self.list_url))
         
     def test_url_radixsort(self):
-        self.assertTrue(self.list_url_sorted == radixsort(self.list_url))
+        self.assertEqual(self.list_url_sorted, radixsort(self.list_url))
         
     def test_url_selectionsort(self):
-        self.assertTrue(self.list_url_sorted == selectionsort(self.list_url))
+        self.assertEqual(self.list_url_sorted, selectionsort(self.list_url))
         
 if __name__ == '__main__':
     unittest.main()
