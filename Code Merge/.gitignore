@@ -1,0 +1,9 @@
+*~
+*.pyc
+
+# Eclipse files
+.project
+.pydevproject
+
+sorted_urls.txt
+sorted.txt
