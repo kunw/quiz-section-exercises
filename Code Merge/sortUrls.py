@@ -161,13 +161,13 @@ Parse command line arguments and execute sort functions.
 def main(argv):
     print("Running sortUrls.py...")
 
-    if len(argv) < 2:
+    if len(argv) < 1:
         print("Usage: ./sortUrls.py <input file> <output file (opt)>")
         sys.exit()
 
     outfile = None
-    if len(argv) == 3:
-        outfile = open(argv[2], 'w')
+    if len(argv) == 2:
+        outfile = open(argv[1], 'w')
     else:
         outfile = sys.stdout
 
@@ -176,7 +176,7 @@ def main(argv):
     errorMessage = "Inappropriate input file format.  You must specify one of the following sorts by an integer (1: insertionsort, 2: mergesort, 3: quicksort, 4: bucketsort), followed by a list of strings to sort (one on each line)."
     
     try:
-        lines = open(argv[1]).readlines()
+        lines = open(argv[0]).readlines()
         urls = lines[1:]
         sel = int(lines[0])
         outfile.write("".join(algos[sel](urls)))
@@ -190,4 +190,4 @@ def main(argv):
         print errorMessage
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main(sys.argv[1:])

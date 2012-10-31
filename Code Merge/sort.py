@@ -19,12 +19,12 @@ def sortfile(filename, sort_func):
         f.write(url)
 
 def main(arg):
-    if len(arg) != 3:
+    if len(arg) != 2:
         print 'Invalid number of arguments!'
         print 'Usage: python sort.py [filename] [sortfunc]'
     else:
-        filename = arg[1]
-        func = arg[2]
+        filename = arg[0]
+        func = arg[1]
         sortfunc = None
         if func == 'mergesort':
             sortfunc = mergesort
@@ -39,4 +39,4 @@ def main(arg):
         sortfile(filename, sortfunc)
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main(sys.argv[1:])
