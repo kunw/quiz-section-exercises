@@ -15,7 +15,7 @@ def sortfile(filename, sort_func):
     url_list = sort_func(url_list)
 
     # Print out sorted URLs to file
-    f =  open('sorted.txt', 'w')
+    f =  open('sorted_urls.txt', 'w')
     for url in url_list:
         f.write(url)
 
