@@ -12,20 +12,20 @@ with any other group's main code that runs the sorting algorithm.
 
 ### Notes
 
-* LOOK AT OTHER GROUP'S DOCUMENTATION/SPECIFICATION TO PASS CORRECT ARGUMENTS INTO FUNCTION!!!!
+* **LOOK AT OTHER GROUP'S DOCUMENTATION/SPECIFICATION TO PASS CORRECT ARGUMENTS INTO FUNCTION!!!!**
 
 All arguments needed to run the group's code need to be given to run
 correctly. This code only enables other group's code to be linked but doesn't
 provide any arguments to make sure the code runs (forces user to give correct
 arguments for code to work).
 
-* ANY ADDITIONAL SORTING MODULES NEEDS A MAIN FUNCTION AND HAS TO BE INSERTED INTO THE CALLSORT FUCNCTION!!!
+* **ANY ADDITIONAL SORTING MODULES NEEDS A MAIN FUNCTION AND HAS TO BE INSERTED INTO THE CALLSORT FUCNCTION!!!**
 
 Because the mergeCode module directly calls any additional sorting module directly, it is
 required that the sorting module to be added has a main method defined and can be called
 (that matches what happens when the code is run at the command line).
 
-* THERE CANNOT BE ANY SORTING FILES THAT HAVE THE SAME NAME!!!
+* **THERE CANNOT BE ANY SORTING FILES THAT HAVE THE SAME NAME!!!**
 
 Because the module knows which code to run, it requires that no two files have the same
 name. However, checking is just as simple as making sure your file doesn't match any other
