@@ -39,10 +39,8 @@ def main(args):
             print 'Usage: sort.py -i [input file] -v -f [sortfunc]'
             sys.exit()
         elif opt in ("-i", "ifile"):
-            print arg
             filename = arg
         elif opt in ("-f", "--func"):
-            print arg
             func = arg
         elif opt in ("-v", "--valid"):
             validate = True
@@ -75,7 +73,9 @@ def main(args):
             valid = candv(filename)
 
             if valid:
-                sortfile(filename, sortfunc)                
+                sortfile(filename, sortfunc)
+        else:
+            sortfile(filename, sortfunc)               
 
 """
     if len(arg) != 2:
