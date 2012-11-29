@@ -10,8 +10,8 @@ def urlFileCanonicalizationEngine(filename):
     
     # Process urls
     for url in url_list:
-        #if url==''
-        #    continue
+        if url=='':
+            continue
         print 'Source: ' + url.rstrip('\n')
         isValid = validateUrl(url)
         print 'Valid: ' + str(isValid).lower()
