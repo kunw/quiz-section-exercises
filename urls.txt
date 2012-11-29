@@ -4,7 +4,7 @@ http://www.youtube.com/
 http://www.youtube.com/watch?v=5EjG-1U3wqA&feature=b-mv
 http://www.cs.washington.edu/
 http://www.cs.washington.edu/education/courses/cse403/12au/
-http://www.cs.washington.edu/education/courses/cse403/02au/
+HTTP://www.cs.washington.edu/education/courses/cse403/02au/
 https://www.djangoproject.com/
 http://myuw.washington.edu/
 https://twitter.com/
@@ -14,4 +14,4 @@ http://aws.amazon.com/
 http://www.heroku.com/
 http://www.onebusaway.org/where/standard/
 https://github.com/
-https://github.com/
+HTTPS://github.com/
